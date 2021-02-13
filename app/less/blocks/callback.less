@@ -1,0 +1,116 @@
+.section.callback {
+    padding-top: 200px;
+}
+.callback {
+    background-image: url("../img/callback_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 20%;
+}
+.callback .container {
+    position: relative;
+}
+.section .callback__title {
+    position: absolute;
+    lefT: 0;
+    top: -70px;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: right;
+}
+.callback__title span {
+    display: block;
+    color: var(--red);
+}
+.callback__col_right {
+    text-align: right;
+}
+.callback__col_left {
+    text-align: left;
+}
+.callback i {
+    font-size: 48px;
+    margin: 0 15px;
+}
+.callback__items {
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+.callback__item {
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+.callback__items_right .callback__item {
+    justify-content: flex-end;
+}
+.callback-row_black {
+    margin-top: 60px;
+    padding: 110px 0;
+    background-color: var(--darkblue);    
+}
+.callback-row__title {
+    font-size: 36px;
+    color: var(--white);
+}
+@media (min-width: 992px) and (max-width:1140px)  {
+    .section .callback__title { 
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .callback-row_black {
+        margin-top: 30px;
+        padding: 60px 0;
+    }
+    .callback {
+        background-position: center 30%;
+    }
+}
+@media (max-width:991px)  {
+    .callback {
+        background: none;
+    }
+    .section.callback {
+        padding: 30px 0;
+    }
+    .section .callback__title {
+        position: relative;
+        top: unset;
+        left: unset;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    .callback-row_dn {
+        display: none;
+    }
+    .callback__items {
+        margin: 0;
+        text-align: left;
+    }
+    .callback__item {
+        margin: 0 0 15px 0;
+    }
+    .callback__items_right .callback__item {
+        flex-direction: row-reverse;
+    }
+    .callback-row_black {
+        margin-top: 30px;
+        padding: 60px 0;
+    }
+}
+@media only screen and (max-width:767px)  {
+    .callback-row_black {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .callback-row__title {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+

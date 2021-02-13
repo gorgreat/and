@@ -1,0 +1,39 @@
+.social-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.social__items {
+    max-width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.social__item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.social-icon {
+    font-size: 20px;
+}
+.social__item-link {
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid var(--red);
+    color: var(--font);
+    text-decoration: none;
+    transition: .2s all linear;
+}
+.social__item-link:hover{    
+    background-color: var(--red);
+    color: var(--white);
+}
+@media only screen and (max-width:767px)  {
+    .social__items {
+        max-width: unset;
+    }
+}

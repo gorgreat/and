@@ -18,6 +18,7 @@
     margin: 0 100px 0 100px;
 }
 .work-item__text {
+    margin-top: 10px;
     font-size: 16px;
     line-height: 17px;
 }
@@ -56,4 +57,56 @@
     top: 0;
     left: -20px;
     background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMDJweCIgdmlld0JveD0iMCAwIDIwIDIwMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjAyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGlkPSJGb3JtYV8xIiBkPSJNMC4yLDE5Mi41bDkuMyw5LjNjMC4zLDAuMywwLjcsMC4zLDEsMGw5LjMtOS4zYzAuMy0wLjMsMC4zLTAuNywwLTFjLTAuMS0wLjEtMC4zLTAuMi0wLjUtMC4yDQoJYy0wLjIsMC0wLjQsMC4xLTAuNSwwLjJsLTguMSw4LjFsMC0xOTguOUMxMC43LDAuMywxMC40LDAsMTAsMFM5LjMsMC4zLDkuMywwLjdsMCwxOTguOWwtOC4xLTguMWMtMC4zLTAuMy0wLjctMC4zLTEsMGwwLDANCglDMCwxOTEuOCwwLDE5Mi4yLDAuMiwxOTIuNXoiLz4NCjwvc3ZnPg0K");
+}
+@media (max-width:1200px)  {
+    .work-row_doun-left::after {
+        display: none;
+    }
+    .work-row_doun-right::before {
+        display: none;
+    }
+    .section.work {
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1140px)  {
+    .work-item {
+        flex: 0 0 150px;
+        max-width: 150px;
+    }
+}
+@media (max-width:991px)  {
+    .work-item_arrow::before {
+        display: none;
+    }
+    .work-item_arrow-left::before {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width:991px)  {
+    .work-item {
+        margin: 0 20px;
+        flex: 0 0 200px;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 577px) and (max-width:767px)  {
+    .work-item {
+        margin: 0 20px;
+        flex: 0 0 150px;
+        max-width: 150px;
+    }
+}
+@media only screen and (max-width:576px)  {
+    .work-row {
+        flex-wrap: wrap;
+    }  
+    .work-item {
+        margin: 10px 0;
+        flex: 0 0 100%;
+        max-width: unset;
+        min-height: unset;
+    }
 }

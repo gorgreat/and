@@ -6,16 +6,22 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 @import "icons.less";
 @import "colors.less";
 @import "blocks/destinations.less";
-@import "blocks/events.less";
+@import "blocks/section-background.less";
 @import "blocks/features.less";
 @import "blocks/case.less";
-@import "blocks/transfer.less";
 @import "blocks/membership.less";
 @import "blocks/work.less";
 @import "blocks/company.less";
 @import "blocks/comments.less";
 @import "blocks/clients.less";
 @import "blocks/contact.less";
+@import "blocks/popular.less";
+@import "blocks/features-digit.less";
+@import "blocks/events.less";
+@import "blocks/popular-direction.less";
+@import "blocks/callback.less";
+@import "blocks/news.less";
+@import "blocks/social.less";
 
 
 body {
@@ -42,8 +48,54 @@ figure {
     margin: 0;
     padding: 0;
 }
+.content-col-2 {
+    column-count: 2;
+}
+.content-col-2>* {
+    margin-top: 0;
+}
 address {
     font-style: normal;
+}
+.btn {
+    max-width: 270px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px 12px 40px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;    
+    color: var(--white);
+    background-color: var(--red);
+    transition: .2s all linear;
+}
+.btn:hover{
+    background-color: var(--white);
+    color: var(--font);
+}
+.btn-white {
+    background-color: var(--white);
+    color: var(--font);
+    transition: .2s all linear;
+}
+.btn-white:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.btn-transparent {
+    display: inline-block;
+    padding: 4px 20px 6px 20px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid var(--red);
+    color: var(--font);
+    transition: .2s all linear;
+}
+.btn-transparent:hover{
+    background-color: var(--red);
+    color: var(--white);
 }
 .small {
     margin: 0;
@@ -59,33 +111,29 @@ address {
 .dark {
     background-color: var(--dark);
 }
+.dark2 {
+    background-color: var(--dark2);
+}
 .center {
     text-align: center;
 }
 .section {
     padding: 110px 0;
 }
-.section-background {
-    padding: 100px 0;
-    color: var(--white);
+
+@media (max-width:1140px)  {
+    .section {
+        padding: 30px 0;
+    }
 }
-.section-background_title {
-    min-height: 511px;
-    box-sizing: border-box;
-    padding: 100px 0 100px 100px;
-    background-image: url("../img/decor.svg");
-    background-repeat: no-repeat;
-}
-.section-background__title {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-family: "Segoe UI Black", Arial, sans-serif;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 44px;
-}
-.section-text__intro {
-    max-width: 390px;
-    margin: 30px auto;
+@media only screen and (max-width:767px)  {
+    body {
+        font-size: 16px;
+        line-height: normal;
+        color: var(--font);
+    }
+    .content-col-2 {
+        column-count: 1;
+    }
 }
 

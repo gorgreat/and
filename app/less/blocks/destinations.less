@@ -26,6 +26,41 @@
 .destinations__item i {
     font-size: 65px;
 }
+@media (max-width:991px)  {
+    .destinations__item .icon {
+        font-size: 36px;
+        margin-right: 15px;
+    }
+    .destinations__item-text {
+        margin-top: 0;
+        padding-top: 5px;
+        max-width: unset;
+    }
+}
+@media (min-width:768px) and (max-width:991px)  {
+    .destinations .block-title {
+        margin-bottom: 0;
+    }
+    .destinations__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+    }
+    .destinations__item-text {
+        margin-top: 0;
+        padding-top: 5px;
+        max-width: unset;
+        font-size: 18px;
+    }
+    .destinations__item-text {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:767px)  {
+    .destinations__item-text {
+        font-size: 16px;
+    }
+}
 @media only screen and (max-width:576px)  {
     .destinations__item {
         flex: 0 0 100%;
